@@ -5,3 +5,18 @@ body {
 .polymorph {
   fill: #29ABE2;
 }
+
+#cta, #cta2 {
+  position:absolute;
+  margin:10em auto 0 auto;
+  left:0;
+  right: 0;
+  width: 30%;
+  background: none;
+  border: 1px solid #fff;
+  border-radius:5px;
+  color: #fff;
+  font-size: 1.5em;
+  cursos:pointer;
+  outline:0;
+}

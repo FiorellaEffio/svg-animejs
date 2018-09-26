@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
-
+      <button id="cta">Click me</button>
       <svg viewBox="0 0 215 110">
           <polygon class="polymorph" points="215,110 0,110 0,0 47.7,0 215,0" />
         <!-- <g
@@ -21,19 +21,29 @@
              inkscape:connector-curvature="0" />
         </g> -->
       </svg>
-
+    <div id="blip">
+      <h1>Well, that was revealing...</h1>
+      <p>Isn't this cool? Here's a little bit of Fiorella skills</p>
+      <button id="cta2">Go back!</button>
+    </div>
   <script src="anime.min.js"></script>
   <script type="text/javascript">
+    let btn = document.getElementById('cta');
+    let btn2 = document.getElementById('cta2');
+    btn.onclick = function() {
+      let morphing = anime({
+        targets: '.polymorph',
+        points: [
+          {value:'215,110 0,110 0,0 47.7,0 67,76'},
+          {value:'215,110 0,110 0,0 0,0 67,76'}
 
-    var morphing = anime({
-      targets: '.polymorph',
-      points: [
-        {value:'215,110 0,110 0,0 47.7,0 67,76'}
-      ],
-      easing: 'easeOutQuad',
-      duration: 2000,
-      loop:true
-    });
+        ],
+        easing: 'easeOutQuad',
+        duration: 1200,
+        loop:true
+      });
+    }
+
 
   </script>
   </body>
