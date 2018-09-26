@@ -20,3 +20,22 @@ body {
   cursos:pointer;
   outline:0;
 }
+p {
+  font-size: 1.2em;
+}
+
+#cta2 {
+  width: auto;
+  margin: 30px auto;
+  background: #29ABE2;
+}
+
+#blip {
+  position: absolute;
+  color: #29ABE2;
+  right: 25%;
+  top:0;
+  opacity: 0;
+  width: 30%;
+  transform: translateY(-800px);
+}
