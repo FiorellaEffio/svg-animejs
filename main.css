@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: 'Montserrat';
 }
-.polymorph {
+.polymorph, .square {
   fill: #29ABE2;
 }
 
